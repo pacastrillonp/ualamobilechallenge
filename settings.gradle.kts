@@ -21,3 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Uala Mobile Challenge"
 include(":app")
+include(":domain")
+include(":data")
+include(":common")
