@@ -3,7 +3,7 @@ package co.pacastrillonp.ualamobilechallenge.common.model
 data class CityPresentable(
     val name: String,
     val country: String,
-    val lat: Double,
-    val lon: Double,
+    val latitude: Double,
+    val longitude: Double,
     var isFavorite: Boolean = false
 )

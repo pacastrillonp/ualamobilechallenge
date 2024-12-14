@@ -11,13 +11,16 @@ import com.google.maps.android.compose.MarkerState
 import com.google.maps.android.compose.rememberCameraPositionState
 
 @Composable
-fun CityMapScreen(lat: Float, lon: Float) {
+fun CityMapScreen(latitude: Float, longitude: Float) {
     GoogleMap(
         modifier = Modifier.fillMaxSize(),
         cameraPositionState = rememberCameraPositionState {
-            position = CameraPosition.fromLatLngZoom(LatLng(lat.toDouble(), lon.toDouble()), 12f)
+            position = CameraPosition.fromLatLngZoom(
+                LatLng(latitude.toDouble(), longitude.toDouble()),
+                12f
+            )
         }
     ) {
-        Marker(state = MarkerState(position = LatLng(lat.toDouble(), lon.toDouble())))
+        Marker(state = MarkerState(position = LatLng(latitude.toDouble(), longitude.toDouble())))
     }
 }
