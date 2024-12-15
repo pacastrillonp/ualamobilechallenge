@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="latitude">Latitud:</string>">
+    <string name="longitude">Longitud:</string>
     <string name="no_cities_found">No se encontraron ciudades</string>
     <string name="search_hint">Buscar</string>
 </resources>

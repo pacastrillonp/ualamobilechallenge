@@ -53,6 +53,12 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
 
+    // Decoding
+    implementation(libs.moshi)
+    //noinspection KaptUsageInsteadOfKsp
+    kapt(libs.moshi.kotlin.codegen)
+    implementation(libs.moshi.kotlin)
+
     // Room
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
