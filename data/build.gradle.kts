@@ -47,6 +47,8 @@ dependencies {
 
     // DI
     implementation(libs.hilt.android)
+    implementation(libs.core.ktx)
+    testImplementation(libs.androidx.core.testing)
     kapt(libs.hilt.android.compiler)
 
     // Retrofit2
@@ -63,6 +65,7 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
+    testImplementation(libs.kotlinx.coroutines.test)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
