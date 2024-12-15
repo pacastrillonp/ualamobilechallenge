@@ -1,4 +1,4 @@
-package co.pacastrillonp.ualamobilechallenge.data.persistence.entities
+package co.pacastrillonp.ualamobilechallenge.common.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -8,8 +8,8 @@ data class CityEntity(
     @PrimaryKey val id: Int,
     val name: String,
     val country: String,
-    val lon: Double,
-    val lat: Double,
+    val longitude: Double,
+    val latitude: Double,
     val isFavorite: Boolean = false
 ){
     companion object {

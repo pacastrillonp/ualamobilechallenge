@@ -4,10 +4,11 @@ object Constants {
 
     object Api {
         const val BASE_URL =
-            "https://gist.githubusercontent.com/hernan-uala/dce8843a8edbe0b0018b32e137bc2b3a/raw/0996accf70cb0ca0e16f9a99e0ee185fafca7af1/cities.json"
+            "https://gist.githubusercontent.com/hernan-uala/dce8843a8edbe0b0018b32e137bc2b3a/raw/0996accf70cb0ca0e16f9a99e0ee185fafca7af1/"
+        const val CITIES = "cities.json"
     }
 
-    object Routes{
+    object Routes {
         const val CITY_LIST = "city_list"
         const val CITY_MAP = "city_map"
         const val LOADING = "loading"
@@ -18,6 +19,9 @@ object Constants {
 
         const val DEFAULT_ORIENTATION = 0f
 
+    }
 
+    object Pagination {
+        const val PAGE_SIZE = 20
     }
 }

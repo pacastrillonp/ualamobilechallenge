@@ -26,7 +26,8 @@ class DatabaseModule {
     }
 
     @Provides
-    fun taskDaoProvider(appDatabase : AppDatabase): CityDao
+    @Singleton
+    fun cityDaoProvider(appDatabase : AppDatabase): CityDao
             = appDatabase.cityDao()
 
 }
