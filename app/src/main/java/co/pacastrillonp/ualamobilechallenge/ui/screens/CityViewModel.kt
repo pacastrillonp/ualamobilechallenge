@@ -44,7 +44,7 @@ class CityViewModel @Inject constructor(
         observeSearchQuery()
     }
 
-    fun loadCities() {
+    private fun loadCities() {
         viewModelScope.launch {
             try {
                 val isTableEmpty = validatePersistedDataUseCase.execute()
